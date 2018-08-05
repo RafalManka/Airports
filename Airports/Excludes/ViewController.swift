@@ -9,17 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let viewModel = AirportsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        viewModel.didAirportsChange = { airports in
+            print("airports = \(airports)")
+        }
+        viewModel.refreshAirports()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

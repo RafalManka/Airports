@@ -64,6 +64,10 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
+  s.platform     = :ios
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+  s.swift_version = "4.1"
+  s.ios.deployment_target = "10.0"
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
@@ -91,8 +95,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  # s.exclude_files = "Airports/Examples/*.{swift,storyboard}"
+  s.source_files = 'Airports/**/*.{swift,h,m}'
+  s.resources = 'Airports/**/*.{storyboard,xib,xcdatamodeld,xcassets}'
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -123,6 +128,7 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
+  s.dependency "Alamofire"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
