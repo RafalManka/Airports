@@ -1,9 +1,9 @@
 //
 //  AirportRepository.swift
-//  EmiratesBooking
+//  AirlineBooking
 //
 //  Created by rafal.manka on 23/07/2018.
-//  Copyright © 2018 Emirates Airlines. All rights reserved.
+//  Copyright © 2018 Airline Airlines. All rights reserved.
 //
 
 import Foundation
@@ -45,11 +45,11 @@ class AirportRepository {
         guard let airports = airportsPersistence.airports else {
             service.fetchAirports(languageProvider.deviceCode) { airports in
                 self.airportsPersistence.airports = airports
-                didRefreshAllAirports(airports)
                 self.refreshNearestAirport(latitude: latitude, longitude: longitude, didRefreshNearestAirport: didRefreshNearestAirport, didRefreshAllAirports: didRefreshAllAirports)
             }
             return
         }
+        didRefreshAllAirports(airports)
         guard let nearestAirports = nearestAirportsPersistence.getNearestAirports(latitude: latitude, longitude: longitude) else {
             service.fetchNearestAirports(latitude: latitude, longitude: longitude) { nearestAirports in
                 self.nearestAirportsPersistence.saveNearestAirports(nearestAirports, latitude: latitude, longitude: longitude)

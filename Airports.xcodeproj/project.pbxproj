@@ -19,6 +19,8 @@
 		C47F53C12116C4EB00722C22 /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F53BB2116C4EB00722C22 /* AirportService.swift */; };
 		C47F53C22116C4EB00722C22 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F53BC2116C4EB00722C22 /* Airport.swift */; };
 		C47F53C82116CDB200722C22 /* Booking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C47F53C62116CDB200722C22 /* Booking.xcdatamodeld */; };
+		C4EDE9A8211857F400B803C1 /* nearest.json in Resources */ = {isa = PBXBuildFile; fileRef = C4EDE9A7211857F400B803C1 /* nearest.json */; };
+		C4F8C2522118540E0064EA0A /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C4F8C2512118540E0064EA0A /* airports.json */; };
 		CE3AA9C9E6B0EB89F199AEDC /* Pods_Airports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86272BA397C9A017A31C5902 /* Pods_Airports.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		C47F53BB2116C4EB00722C22 /* AirportService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
 		C47F53BC2116C4EB00722C22 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		C47F53C72116CDB200722C22 /* Booking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Booking.xcdatamodel; sourceTree = "<group>"; };
+		C4EDE9A7211857F400B803C1 /* nearest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nearest.json; sourceTree = "<group>"; };
+		C4F8C2512118540E0064EA0A /* airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		F13B889FC9F099C0476E975E /* Pods-Airports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airports.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airports/Pods-Airports.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,8 @@
 				C47F539E2116C03100722C22 /* Assets.xcassets */,
 				C47F53A02116C03100722C22 /* LaunchScreen.storyboard */,
 				C47F53A32116C03100722C22 /* Info.plist */,
+				C4F8C2512118540E0064EA0A /* airports.json */,
+				C4EDE9A7211857F400B803C1 /* nearest.json */,
 			);
 			path = Airports;
 			sourceTree = "<group>";
@@ -193,7 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EDE9A8211857F400B803C1 /* nearest.json in Resources */,
 				C47F53A22116C03100722C22 /* LaunchScreen.storyboard in Resources */,
+				C4F8C2522118540E0064EA0A /* airports.json in Resources */,
 				C47F539F2116C03100722C22 /* Assets.xcassets in Resources */,
 				C47F539D2116C02F00722C22 /* Main.storyboard in Resources */,
 			);

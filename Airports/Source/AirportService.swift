@@ -1,18 +1,18 @@
 //
 //  AirportService.swift
-//  EmiratesBooking
+//  AirlineBooking
 //
 //  Created by rafal.manka on 23/07/2018.
-//  Copyright © 2018 Emirates Airlines. All rights reserved.
+//  Copyright © 2018 Airlines. All rights reserved.
 //
 
 import Foundation
 import Alamofire
 
-fileprivate let baseUrl = "http://localhost:8080"
+fileprivate let baseUrl = "http://demo2542923.mockable.io"
 
 struct UrlRepository {
-    let fetchAirports = baseUrl + "/airport/list/v1"
+    let fetchAirports = baseUrl + "/airport/list/v1?lang=en"
     let fetchNearestAirports = baseUrl + "/airport/nearest/v1"
 }
 
@@ -41,7 +41,7 @@ class AirportService {
                 } catch let jsonError {
                     print(jsonError)
                 }
-            }
+        }
     }
     
     func fetchNearestAirports(latitude: Double, longitude: Double, didFetchNearestAirports: @escaping ([String]) -> Void ) {
@@ -54,6 +54,6 @@ class AirportService {
                 } catch let jsonError {
                     print(jsonError)
                 }
-            }
+        }
     }
 }

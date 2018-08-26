@@ -1,9 +1,9 @@
 //
 //  AirportPersistence.swift
-//  EmiratesBooking
+//  AirlineBooking
 //
 //  Created by rafal.manka on 23/07/2018.
-//  Copyright © 2018 Emirates Airlines. All rights reserved.
+//  Copyright © 2018 Airline Airlines. All rights reserved.
 //
 
 import UIKit

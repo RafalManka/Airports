@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
 
   # s.exclude_files = "Airports/Examples/*.{swift,storyboard}"
   s.source_files = 'Airports/**/*.{swift,h,m}'
-  s.resources = 'Airports/**/*.{storyboard,xib,xcdatamodeld,xcassets}'
+  s.resources = 'Airports/**/*.{storyboard,xib,xcdatamodeld,xcassets,json}'
 
   # s.public_header_files = "Classes/**/*.h"
 
